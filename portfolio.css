@@ -1,0 +1,274 @@
+*{
+    font-family: "Pacifico", cursive;
+    padding: 0;
+    margin: 0;
+}
+#container{
+    width: 100%;
+    position: relative;
+    height: 100%;
+
+}
+.logo{
+    width: 400px;
+    height: 300px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    margin-left: 80px;
+}
+.lines{
+    text-decoration: none;
+    font-size: 40px;
+    color:black ;
+    font-weight: bold;
+    display: inline;
+}
+#home{
+    margin-top: 250px;
+    width: 100%;
+}
+.home_content{
+    margin: 13% 0% 0% 8%;
+    width: 30%;
+}
+#li{
+    display: inline;
+    margin: 0px 20px;
+
+}
+#uname{
+    font-size: 60px;
+    margin-bottom: 20px;
+    font-family: "Pacifico", cursive;
+
+}
+#lname{
+    font-size: 60px;
+    color: orangered;
+
+}
+#p{
+    line-height: 2;
+    display: inline-block;
+    text-align: justify;
+    font-size: 30px;
+}
+.b{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(39, 32, 131);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(138, 132, 177);
+    font-size: 30px;
+    
+
+}
+.lines:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.image_content{
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 80px;
+    top: 0;
+    
+    
+}
+.group{
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+}
+.image_content:hover #shape{
+    bottom: 40px;
+}
+.image_content:hover #boy{
+    left: 25%;
+}
+.home{
+    display: flex;
+    display: inline;
+}
+#about{
+    margin: 15% 8% 0% 8%;
+}
+.about_head{
+    text-align: center;
+}
+.mh{
+    font-size: 50px;
+    color: rgb(47, 53, 129);
+}
+.sh{
+    font-size: 40px;
+    color: rgb(138, 131, 182);
+}
+.about_content{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+}
+.contimg{
+    width: 300px;
+    height: 400px;
+}
+
+
+#det{
+    text-align: justify;
+    padding: 20px;
+    line-height: 2;
+    width: 35%;
+    font-size: 30px;
+    width: 60%;
+}
+.info{
+    margin-top: 10px;
+}
+.box{
+    display: flex;
+    align-items: center;
+}
+.box>span{
+    margin-left: 100px;
+}
+#skills{
+    margin: 8% 8% 0% 8%;
+
+}
+.myskill{
+    width: 100%;
+}
+.skill_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 20px;
+    align-items: center;
+
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    position: relative;
+}
+.bar_head ,.bar_percentage{
+    font-size: 1,1rem;
+    font-weight:bold;
+}
+.basebar{
+    width: 100%;
+    height: 1rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    width: 90%;
+    background-color: brown;
+}
+.cssbar{
+    width: 99%;
+    background-color: brown;
+}
+.javascriptbar{
+    width: 100%;
+    background-color: brown;
+}
+.reactbar{
+    width: 95%;
+    background-color: brown;
+}
+.contact{
+    margin: 20px;
+}
+.about_head{
+    margin: 20px;
+}
+.icon_collection{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+#icon{
+    height: 50px;
+    align-items: center;
+    width: 50px;
+    font-weight: bolder;
+    border-radius: 50px;
+    background-color: rgb(168, 179, 165);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px 10px;
+    
+    
+}
+#icon:hover{
+    background-image: linear-gradient( to right, rgb(166, 255, 0),rgb(235, 5, 224));
+
+}
+.brand{
+    color: rgb(29, 32, 167);
+    font-size: 26px;
+}
+.brand:hover{
+    color: aliceblue;
+}
+@keyframes rotate{
+    0% {transform: rotate(30deg); }
+    20%{ transform: rotate(-30deg);}
+    40%{ transform: rotate(30deg);}
+    60%{ transform: rotate(-30deg);}
+    80%{ transform: rotate(30deg);}
+    100%{ transform: rotate(-30deg);}
+}
+#icon:hover{
+    width: 50px;
+    height: 50px;
+    animation-name: rotate;
+    animation-duration: 0.5s;
+    animation: rotate 0.5s;
+
+}
+#copy{
+    margin: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+.arr{
+    float: right;
+    margin: -40px 30px 30px 50px;
+    
+
+}
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(230, 223, 223);
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(37, 37, 95);
+}
